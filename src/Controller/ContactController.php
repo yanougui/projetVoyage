@@ -51,6 +51,9 @@ class ContactController  extends AbstractController{
     public function envoiMail(\Swift_Mailer $mailer, Contact $contact){
         $message = (new Swift_Message('Message du site de voyages'))
             ->setFrom($contact->getEmail())
+                /**
+                 * 'contact@mesvoyages.fr' à changer au cas ou cela ne mache pas
+                 */
             ->setTo('contact@mesvoyages.fr')
             ->setBody(
                 $this->renderView(

@@ -47,6 +47,7 @@ class VisiteType extends AbstractType
             ])
             ->add('submit', SubmitType::class,[
                 'label' =>'Enregistrer'
+                
             ])
         ;
     }

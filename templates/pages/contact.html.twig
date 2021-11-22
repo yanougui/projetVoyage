@@ -1,6 +1,6 @@
 {% extends "basefront.html.twig" %}
 {% block body %}
-    <h1>page de Contact</h1>
+    <h1></h1>
     {% for message in app.flashes('succes') %}
         <div class="mt-3 alert alert-success">
             {{ message }}
@@ -20,5 +20,6 @@
                {{ form_row(formcontact.message) }}
             </div>
         </div>
+            
     {{ form_end(formcontact) }}
  {% endblock %}
